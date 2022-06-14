@@ -1,0 +1,11 @@
+
+<div class="justify-center d-flex justify-content-around ">
+    <h5 class="mx-2" [ngClass]="{'strike': !todo.status}">{{todo.title}}</h5> 
+    <p class="mx-2 ">{{todo.description}}</p>
+    <div class="mb-3 mx-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1{{i}}" (click)="toCut(todo)">
+        <label class="form-check-label" for="exampleCheck1{{i}}">Done</label>
+      </div> 
+    <button class="btn btn-sm btn-danger" (click)="onClick(todo)">Delete</button>  
+</div>
+

@@ -1,0 +1,14 @@
+<h4 style="margin-left: 20vw;">Add a Todo</h4>
+<form (ngSubmit)="onAdd()" style="margin-left: 20vw;">
+    <div class="form-group">
+      <label for="title" >Title</label>
+      <input type="text" [(ngModel)] ="title" class="form-control" id="title" name="title"aria-describedby="emailHelp">
+      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+    <div class="form-group">
+      <label for="description" class="form-label">Description</label>
+      <input type="text"  [(ngModel)] ="description" class="form-control" name="description" id="description">
+    </div>
+    
+    <button type="submit" style="margin-top: 1vh;" class="btn  btn-primary">Add</button>
+  </form>
